@@ -13,7 +13,7 @@ namespace ESDnevnik2023A
         public static SqlConnection vrati_vezu()
         {
             string CS;
-            CS = ConfigurationManager.ConnectionStrings["skola"].ConnectionString;
+            CS = ConfigurationManager.ConnectionStrings["home"].ConnectionString;
             return new SqlConnection(CS);
         }
     }
